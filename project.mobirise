@@ -1,0 +1,324 @@
+{
+  "settings": {
+    "name": "What.expert",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "partneramp",
+      "title": "PartnerAMP",
+      "styling": {
+        "primaryColor": "#ff4a17",
+        "secondaryColor": "#14212B",
+        "successColor": "#cccccc",
+        "infoColor": "#222222",
+        "warningColor": "#fac769",
+        "dangerColor": "#989898",
+        "mainFont": "Nunito Sans",
+        "display1Font": "Amiri",
+        "display1Size": 4.5,
+        "display2Font": "Amiri",
+        "display2Size": 3,
+        "display5Font": "Amiri",
+        "display5Size": 1.875,
+        "display7Font": "Nunito Sans",
+        "display7Size": 1.125,
+        "display4Font": "Nunito Sans",
+        "display4Size": 0.9,
+        "isRoundedButtons": true,
+        "isScrollToTopButton": true,
+        "arrowColor": "#000000"
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.2.0",
+    "siteFonts": [],
+    "imageResize": true,
+    "chatbutton": {
+      "phone": "+34642989129",
+      "message": "",
+      "size": "65px",
+      "backgroundColor": "#e5ddd5",
+      "position": "left",
+      "popupMessage": "From stringing a guitar to choosing the right guitar amp, we have expert musicians and sound engineers on call ..",
+      "showPopup": true,
+      "showOnIE": true,
+      "autoOpenTimeout": 5,
+      "headerColor": "#39847a",
+      "headerTitle": "👋 What do you need expert help with?",
+      "placeholder": "Connect me with an expert.",
+      "zIndex": 10,
+      "enabled": true
+    },
+    "favicon": "@PROJECT_PATH@/assets/images/what-expert-logo-1.svg",
+    "cssOptimize": true,
+    "cookiesAlert": {
+      "customDialogSelector": false,
+      "colorText": "#424a4d",
+      "colorBg": "#eaeff1",
+      "colorButton": "",
+      "colorLink": "#424a4d",
+      "underlineLink": true,
+      "opacity": "99",
+      "opacityOverlay": "80",
+      "text": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
+      "textButton": "Agree"
+    },
+    "gdpr": {
+      "colorText": "#a7a7a7",
+      "colorLink": "#149dcc",
+      "underlineLink": true,
+      "text": "By continuing you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>."
+    },
+    "PWA": {
+      "enabled": true,
+      "name": "",
+      "icon": "@ADDONS_PATH@/pwa-builder/assets/icons/512x512.png",
+      "themeColor": "#ea6079"
+    },
+    "canonical-url": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "pwa-switcher": true,
+    "uniqCompNum": 1,
+    "versionPublish": "5.2.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "What.expert | On Demand Video Calls ",
+        "meta_descr": "Book video calls with our verified experts. Save hundreds of hours and thousands of dollars on courses, coaching and tutorials.",
+        "header_custom": "<link rel=\"stylesheet\" href=\"https://gist.githubusercontent.com/freetonik/b432fa2ea224eca2f2458838049a8e7f/raw/abbb4a1a4771ae01d72d6c592dc6184b3715e564/css_reset.css\">",
+        "footer_custom": "",
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/what-expert-logo.svg"
+      },
+      "components": [
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "&.menu": {
+              "min-height": "0px !important",
+              "padding": "0 !important"
+            },
+            ".navbar-nav .nav-link": {
+              "margin": ".1em 1em",
+              "padding": "0 !important"
+            },
+            ".iconfont-wrapper": {
+              "height": "1.3rem",
+              "width": "1.3rem",
+              ".amp-iconfont": {
+                "font-size": "1.3rem",
+                "width": "1.3rem",
+                "color": "@iconColor"
+              }
+            },
+            ".close-sidebar": {
+              "right": "20px",
+              "position": "absolute",
+              "top": "20px",
+              "z-index": "1",
+              "span": {
+                "background-color": "@hamburgerColor"
+              }
+            },
+            ".hamburger span": {
+              "background-color": "@hamburgerColor !important",
+              "&:hover": {
+                "background-color": "darken(@hamburgerColor, 50%) !important"
+              }
+            },
+            ".navbar": {
+              "&:hover": {
+                ".navbar-caption": {
+                  "color": "darken(@hamburgerColor, 50%) !important"
+                },
+                ".hamburger span": {
+                  "background-color": "darken(@hamburgerColor, 50%) !important"
+                }
+              },
+              "width": "80px",
+              "height": "100%",
+              "min-height": "80px",
+              "transition": "all .3s",
+              "background": "transparent",
+              "&.navbar-short": {
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              },
+              "&.opened": {
+                "transition": "all .3s",
+                "background": "@menuBgColor !important"
+              },
+              "&.collapsed": {
+                ".navbar-collapse": {
+                  "display": "none",
+                  "position": "absolute",
+                  "top": "0",
+                  "right": "auto",
+                  "min-height": "100vh",
+                  "background": "@menuBgColor",
+                  "padding": "1.5rem 2rem 1rem",
+                  "left": "0"
+                },
+                "&.opened": {
+                  ".navbar-brand, .navbar-toggler.hide": {
+                    "display": "none"
+                  },
+                  ".navbar-collapse": {
+                    "&.show, &.collapsing": {
+                      "display": "block",
+                      "min-width": "280px"
+                    }
+                  },
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "position": "relative",
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".navbar": {
+                  "width": "100%",
+                  "height": "80px"
+                }
+              }
+            },
+            ".navbar-caption": {
+              "color": "@hamburgerColor !important"
+            },
+            "ul.navbar-nav": {
+              "-webkit-flex-direction": "column !important",
+              "flex-direction": "column !important",
+              "li": {
+                "margin": "auto"
+              }
+            },
+            ".nav-dropdown .dropdown-menu": {
+              "border-radius": "0",
+              "border": "0",
+              "left": "0",
+              "margin": "0",
+              "padding": "0",
+              ".dropdown-item": {
+                "font-weight": "400",
+                "width": "100%",
+                "clear": "both",
+                "text-align": "inherit",
+                "border": "0"
+              }
+            },
+            ".nav-item.dropdown": {
+              ".dropdown-menu": {
+                "z-index": "-1"
+              },
+              "&:hover": {
+                "& > .dropdown-menu": {
+                  "z-index": "1"
+                }
+              }
+            },
+            ".dropdown-menu .dropdown:hover": {
+              "& > .dropdown-menu": {
+                "z-index": "1"
+              }
+            },
+            ".navbar-brand": {
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all .3s",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              },
+              ".navbar-caption-wrap": {
+                "transform": "rotate(-90deg)",
+                "top": "80px",
+                "right": "18px",
+                "position": "absolute"
+              }
+            },
+            ".dropdown-item.active,.dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor"
+              }
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            ".navbar-dropdown": {
+              "padding": ".5rem 1rem"
+            },
+            ".ampstart-btn": {
+              "display": "flex",
+              "align-self": "center",
+              "&.hamburger": {
+                "left": "25px",
+                "right": "auto",
+                "margin": "0"
+              }
+            },
+            ".open": {
+              "transform": "translateX(0%) !important",
+              "display": "block!important"
+            },
+            ".builder-sidebar": {
+              "min-width": "280px",
+              "background-color": "@menuBgColor"
+            },
+            "amp-img": {
+              "max-height": "(@logoHeight * 1px)",
+              "img": {
+                "object-fit": "contain",
+                "height": "(@logoHeight * 1px) !important"
+              }
+            },
+            "@media (max-width: 576px)": {
+              ".navbar-brand": {
+                "display": "none!important"
+              }
+            }
+          },
+          "_name": "ampMenu4",
+          "_sourceTheme": "partneramp",
+          "_customHTML": "<section class=\"menu horizontal-menu ampMenu4\" group=\"Menu\" plugins=\"DropDown, amp-main,amp-sidebar\" not-draggable position-absolute always-top global once=\"menu\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" inline title=\"Height\" name=\"logoHeight\" min=\"50\" max=\"100\" value=\"50\" step=\"1\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Social\" name=\"showSocial\">\n        <input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"4\" value=\"3\" step=\"1\" condition=\"showSocial\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconColor\" value=\"#232323\" condition=\"showSocial\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ea6079\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n\n    <nav class=\"navbar collapsed navbar-dropdown navbar-fixed-top\">\n        <div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n            <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-danger\" on=\"tap:sidebar.toggle\" data-app-selector=\".navbar-caption\" data-app-placeholder=\"Type Text\">MENU</a></span>\n        </div>\n\n\n\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <button class=\"navbar-toggler mb-2\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/what-expert-logo.svg\" layout=\"responsive\" width=\"50\" height=\"50\" alt=\"What-expert on demand video calls with verified experts\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <a href=\"http://what.expert/\"><img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/what-expert-logo.svg\" alt=\"What-expert on demand video calls with verified experts\"></a>\n                </amp-img>\n            </span>\n\n            <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link mbr-semibold text-black\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-italic mbr-iconfont mbr-iconfont-btn\"></span>\n                        About</a>\n                </li></ul>\n\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-pt-3 navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-black-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">INFO</a></div>\n\n\n            <div class=\"menu-social-list mbr-pt-4\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n                <a href=\"https://mobiri.se\" target=\"_blank\" class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont animation-normal fa-instagram fa\"></span>\n                </a>\n                <a href=\"https://mobiri.se\" target=\"_blank\" class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-f fa\"></span>\n                </a>\n                <a href=\"https://mobiri.se\" target=\"_blank\" class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont animation-normal fa-twitter fa\"></span>\n                </a>\n\n\n\n            </div>\n\n\n\n        </div>\n\n\n\n        <button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n\n\n\n\n        <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger sticky-but\">\n            <span></span>\n            <span></span>\n            <span></span>\n            <span></span>\n        </button>\n    </nav>\n\n    <!-- AMP plug -->\n    <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"left\">\n        <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n            <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n                <span></span>\n                <span></span>\n            </button>\n        </div>\n    </amp-sidebar>\n\n</section>",
+          "_cid": "skEIB02INv",
+          "_anchor": "ampMenu4-0",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
